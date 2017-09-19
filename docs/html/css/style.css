@@ -2,6 +2,24 @@
 	font-family: Curlz MT;
 }
 
+.footer {
+	text-align: center;
+}
+
+#hours {
+	border: 2px solid black;
+}
+
+#hours td {
+	border: 1px solid black;
+}
+
+
+/*--Navigation CSS--*/
+nav {
+	padding-bottom: 25px;
+}
+
 nav ul {
 	list-style-type: none;
 	padding: 0;
