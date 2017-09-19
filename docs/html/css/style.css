@@ -1,0 +1,43 @@
+.title {
+	font-family: Curlz MT;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	background-color: #FEFF2D;
+	font-family: arial, sans-serif;
+}
+
+nav li {
+	float: left;
+}
+
+.navigation {
+	display: block;
+	color: white;
+	background-color: #9B0100;
+	text-align: center;
+	padding: 15px 20px;
+	font-weight: bold;
+}
+
+nav li a {
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+}
+
+nav li a:hover {
+	background-color: #9B0100;
+	color: white;
+}
+
+nav li a:selected {
+	background-color: #9B0100;
+	color: white;
+}
