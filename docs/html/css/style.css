@@ -1,21 +1,32 @@
-.title {
-	font-family: Curlz MT;
+body {
+	background-color: #fffff0;
 }
 
 .footer {
 	text-align: center;
 }
 
-#hours, #locations {
-	border: 2px solid black;
+#hours, #locations, #products {
+	border: 2px solid #fffff0;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	margin-bottom: 25px;
+	border-collapse: collapse;
 }
 
 #hours td, #locations td {
-	border: 1px solid black;
+	border: 1px solid #fffff0;
+	padding: 5px;
+}
+
+#products td {
+	border-right: 2px solid #fffff0;
+	padding: 5px;
+}
+
+#products th {
+	border-bottom: 2px solid #fffff0;
 }
 
 
@@ -66,7 +77,13 @@ nav li a:selected {
 
 .main-content {
 	border: 2px solid black;
-	padding: 5px;
-	margin: 5px;
+	padding: 15px;
+	margin: 15px;
 	background-color: #4C0908;
+	color: #fffff0 ;
+}
+
+.process-image {
+	width: 33%;
+	height: 250px;
 }
