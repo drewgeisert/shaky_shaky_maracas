@@ -6,11 +6,15 @@
 	text-align: center;
 }
 
-#hours {
+#hours, #locations {
 	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
-#hours td {
+#hours td, #locations td {
 	border: 1px solid black;
 }
 
@@ -58,4 +62,11 @@ nav li a:hover {
 nav li a:selected {
 	background-color: #9B0100;
 	color: white;
+}
+
+.main-content {
+	border: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+	background-color: #4C0908;
 }
