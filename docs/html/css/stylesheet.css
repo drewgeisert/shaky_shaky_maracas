@@ -1,3 +1,33 @@
+
+#productpicture {
+    padding: 20px;
+    margin: 15px;
+    max-width: 700px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #EB7F23;
+    }
+
+p {
+    font-size: 18px;
+    text-indent: 30px;
+    font-family: arial, sans-serif;
+    padding: 15px;
+}
+
+.oneline {
+    text-align: center;
+    font-size: 25px;
+    font-family: arial, sans-serif;
+    padding: 10px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #068675;
+    }
+
+
+
+
 nav ul {
     list-style-type: none;
     overflow: hidden;
