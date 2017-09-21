@@ -1,1 +1,22 @@
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #6B202E;
+    font-family: arial, sans-serif;
+    }
 
+nav li {
+    float: left;
+    }
+    
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    }
+
+nav li a:hover {
+    background-color: #CF4232;
+    }
