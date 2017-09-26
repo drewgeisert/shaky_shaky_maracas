@@ -69,7 +69,7 @@
         
           <img src="images/headerpicture.png" alt="Header Picture"/>
 
-    <div class="main-content">
+    <div class="main-content container">
 
     <h1 class="title">Our Products</h1>
 
@@ -126,6 +126,43 @@
         </tbody>
    </table>   
 
+   <h3>Want To Order?</h1>
+
+   <h4>Color: 
+      <select id="selectColor">
+        <option>Pink</option>
+        <option>Blue</option>
+        <option>Purple</option>
+        <option>Red</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Orange</option>
+        <option>Multi-Color</option>
+        <option>Plain</option>
+      </select>
+    </h4>
+    <h4>How many (pairs):  
+      <select id="selectPairs" onchange="checkCustom()">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option value='custom'>Custom</option>
+      </select>
+    </h4>
+    <h4>Email (We will email you with confirmation of order): <input type="text"/></h4>
+    <button class="btn btn-primary btn-danger" onclick="alertInfo()">Submit Order</button>
+
+    <div class="alert alert-success" id="alert" style="display:none">
+      <strong>Success!</strong> You have placed your order, you will be getting a confirmation email shortly.
+    </div>
+
   </div>
    
 <footer class="footer">
@@ -136,6 +173,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function checkCustom() {
+      var select = document.getElementById("selectPairs");
+      var selectedValue = select.options[select.selectedIndex].value;
+
+      if(selectedValue == "custom") {
+        var numCopies = prompt("How many copies would you like to order?");
+        select.options[select.selectedIndex].text = "Custom: " + numCopies;
+      }
+    }
+
+    function alertInfo() {
+        var alert = document.getElementById("alert");
+        alert.style.display = "block";
+    }
+  </script>
 
 </body>
 
