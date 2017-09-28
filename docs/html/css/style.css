@@ -11,11 +11,6 @@
 	color: #fffff0;
 }
 
-#hours td, #locations td {
-	border: 1px solid black;
-	padding: 5px;
-}
-
 #products, #hours, #locations {
 	background-color:white;
 	text-align:center;
