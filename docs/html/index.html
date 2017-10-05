@@ -5,55 +5,109 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <meta charset="utf-8">
     
     <title>Shaky Shaky Maracas</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <style>
+      .uline {
+         text-decoration: underline;
+      }
+    </style>
     
 </head>
     
-      
-
 <body>
 
-     <h2>Navigation</h2>
-        <nav>
-              <ul>
-                  <li>
-                      <a href="about.html">About Us</a>
-                  </li>
-        
-                  <li>
-                      <a href="for_sale.html">Our Products</a>
-                  </li>
-        
-                  <li>
-                      <a href="hours_and_directions.html">Store Hours and Location</a>
-                  </li>
-        
-                  <li>
-                      <a href="news.html">Shaky Shaky News</a>
-                  </li>
-        
-                  <li>
-                      <a href="process.html">How Our Maracas Are Made</a>
-                  </li>
-              </ul>
-        </nav>
-    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
 
-    <img src="images/titlepicture.png" alt="Title Picture"/>
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-    <h1>Shaky Shaky Maracas</h1>
-    
-    <p>We are a start up company new to the maraca selling game, with a specially made 
-    maraca that is indestructible. We even ran our maracas over with a car.</p>
+          <!-- Title on nav bar -->
 
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+  
+            <li>
+                <a href="for_sale.html">Products</a>
+            </li>
+  
+            <li>
+                <a href="hours_and_directions.html">Hours &amp; Location</a>
+            </li>
+  
+            <li>
+                <a href="news.html">News</a>
+            </li>
+  
+            <li>
+                <a href="process.html">Production</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            
+            <li>
+                <a href="sign_up.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <img src="images/titlepicture.png" alt="Title Picture" align="middle" height="100%" width="100%"/>
+
+    <div class="main-content container">
+
+      <div class="jumbotron">
+
+        <h1 class="title">Shaky Shaky Maracas</h1>
+        
+        <p>We are a start up company new to the maraca selling game, with a specially made 
+        maraca that is <span style="font-weight: bold">indestructible</span>. We even ran our maracas over with a car.</p>
+
+        <p>If you're in the market for some new maracas, Shaky Shaky Maracas is the place for you! Our customer service is top-notch, because when we're not making maracas, we're there to help you.</p>
+
+        <p>Maracas are for everybody, age 0 to infinity. Everyone can enjoy a good set of maracas.</p>
+
+        <p><span class="uline">There's no such thing as a bad time for maracas</span>. Use them at parties, at your friends house, at your wedding. No matter what the situation, our maracas should be your instrument of choice.</p>
+
+      </div>
+
+    </div>
    
-<footer>
+<footer class="footer">
     Copyright 2017 by Karson and Drew
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
 </body>
 
 </html>

@@ -1,0 +1,35 @@
+.title {
+	font-family: Curlz MT, sans-serif;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.footer {
+	text-align: center;
+	color: #fffff0;
+}
+
+#products, #hours, #locations {
+	background-color:white;
+	text-align:center;
+}
+
+.main-content {
+	border: 2px solid black;
+	padding: 15px;
+	margin: 15px;
+	background-color: #FEFF2D;
+	color: black;
+}
+
+.process-image {
+	width: 30%;
+	height: 250px;
+}
+
+body {
+	background-color: #4C0908;
+	padding-top:50px;
+}

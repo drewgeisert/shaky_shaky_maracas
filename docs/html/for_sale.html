@@ -5,95 +5,210 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/style.css"/>
 
     <meta charset="utf-8">
     
     <title>Products</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     
 </head>
 
 <body>
 
-     <h2>Navigation</h2>
-        <nav>
-              <ul>
-                  <li>
-                      <a href="about.html">About Us</a>
-                  </li>
-        
-                  <li>
-                      <a href="for_sale.html">Our Products</a>
-                  </li>
-        
-                  <li>
-                      <a href="hours_and_directions.html">Store Hours and Location</a>
-                  </li>
-        
-                  <li>
-                      <a href="news.html">Shaky Shaky News</a>
-                  </li>
-        
-                  <li>
-                      <a href="process.html">How Our Maracas Are Made</a>
-                  </li>
-              </ul>
-        </nav>
-        
-        <img src="images/headerpicture.png" alt="Header Picture"/>
-    
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
 
-    <img src="images/our_products.png" alt="Our Products"/>
-    
+            <!-- Three line "hamburger" icon for the collapsed navigation -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <!-- Title on nav bar -->
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+  
+            <li class="active">
+                <a href="for_sale.html">Products</a>
+            </li>
+  
+            <li>
+                <a href="hours_and_directions.html">Hours &amp; Location</a>
+            </li>
+  
+            <li>
+                <a href="news.html">News</a>
+            </li>
+  
+            <li>
+                <a href="process.html">Production</a>
+            </li>
+
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            
+            <li>
+                <a href="sign_up.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        
+          <img src="images/titlepicture.png" alt="Title Picture" align="middle" height="100%" width="100%"/>
+
+    <div class="main-content container">
+
+    <h1 class="title">Our Products</h1>
+
     <p>Shaky Shaky Maracas has a variety of maraca colors to choose from. This is 
-    something we are very proud of here at Shaky Shaky Maracas.</p>
+    something we are very proud of here at Shaky Shaky Maracas. Customer service and client
+    satisfaction are our most important values. We give you the best products for the best prices.</p>
     
     <p> Each maraca pair sells for &dollar;10.00 and shipping and handling is free.</p>
     
-     <table>
+   </div>
+    
+    <div class="table-responsive">
+     <table id="products" class="table table-bordered">
         <thead>
             <tr>
-                <th>Colors</th>
-                <th>Multi-Color</th>
-                <th>No color</th>
+                <th class="center-text">Colors</th>
+                <th class="center-text">Multi-Color</th>
+                <th class="center-text">No color</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Pink</td>
-                <td>This will include</td>
-                <td>Just a plain</td>
+                <td>This will include all of the colors Shaky Shaky has to offer.</td>
+                <td>Just a plain old maraca.</td>
             </tr>
             <tr>
                 <td>Blue</td>
-                <td>all of the colors</td>
-                <td>old maraca.</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Purple</td>
-                <td>Shaky Shaky has</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Red</td>
-                <td>to offer.</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Yellow</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Green</td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td>Orange</td>
+                <td></td>
+                <td></td>
             </tr>
         </tbody>
-   </table>   
+   </table> 
+   </div>  
 
+   <h3>Want To Order?</h3>
+
+   <form>
+    <div class="form-group">
+        <label for="selectColor">Color: </label>
+        <select id="selectColor" class="form-control">
+          <option>Pink</option>
+          <option>Blue</option>
+          <option>Purple</option>
+          <option>Red</option>
+          <option>Yellow</option>
+          <option>Green</option>
+          <option>Orange</option>
+          <option>Multi-Color</option>
+          <option>Plain</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="selectPairs">How many (pairs): </label>
+        <select id="selectPairs" class="form-control" onchange="checkCustom()">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option value='custom'>Custom</option>
+        </select>
+      </div>
+
+    <div class="form-group">
+      <label for="email">Email (We will email you with confirmation of order): </label> 
+      <input type="email" class="form-control" id="email"/>
+    </div>
+
+    <button class="btn btn-primary btn-danger" onclick="alertInfo()">Submit Order</button>
+  </form>
+
+    <div class="alert alert-success alert-dismissable" id="alert" style="display:none">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Success!</strong> You have placed your order, you will be getting a confirmation email shortly.
+    </div>
    
-<footer>
+<footer class="footer">
 
     <br>Copyright 2017 by Karson and Drew<br>
     
 </footer>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    function checkCustom() {
+      var select = document.getElementById("selectPairs");
+      var selectedValue = select.options[select.selectedIndex].value;
+
+      if(selectedValue == "custom") {
+        var numCopies = prompt("How many copies would you like to order?");
+        if(numCopies != 0)
+          select.options[select.selectedIndex].text = "Custom: " + numCopies;
+      }
+    }
+
+    function alertInfo() {
+        var alert = document.getElementById("alert");
+        alert.style.display = "block";
+    }
+  </script>
 
 </body>
 
